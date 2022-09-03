@@ -86,6 +86,8 @@ kubectl describe deployments/dummy-server
 
 ### Rolling update
 
+If we keep running a simple script which keeps fetching from the server, initially the response would be `This is v1` and it would change to `This is v2`. This shows us two things, first, the update has taken place, and second, there is no **`downtime`**.
+
 ```bash
 kubectl set image deployments/dummy-server dummy-server=dummy-server:v2  # Update the image and k8s will take care of rolling out the update without downtime
 kubectl get pods -o wide
