@@ -69,6 +69,7 @@ kubectl exec -ti $POD_NAME -- /bin/sh  # Enter into the pod container
 
 ```bash
 kubectl expose deployment/kubernetes-bootcamp --type="NodePort" --port 8080
+kubectl get services  # List out the services, when we expose a deployment or pod it creates a service
 ```
 
 Verify the app
@@ -128,3 +129,4 @@ kind get cluster
 ## References
 
 1. [Kubernetes basics](https://kubernetes.io/docs/tutorials/kubernetes-basics/)
+2. [Kubernetes cheatsheet](https://kubernetes.io/docs/reference/kubectl/cheatsheet/)
