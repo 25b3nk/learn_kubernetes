@@ -40,6 +40,11 @@ sudo mv ./kind /usr/local/bin/kind
     kind load docker-image dummy-server:v1
     kind load docker-image dummy-server:v2
     ```
+3. Get the images loaded in the node
+    ```bash
+    kubectl get nodes
+    docker exec -ti <node-name> crictl images
+    ```
 
 ### Deploy the app
 
