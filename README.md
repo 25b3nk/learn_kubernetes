@@ -122,7 +122,7 @@ Delete the `kind` cluster
 
 ```bash
 kind delete cluster
-kind get cluster
+kind get clusters
 ```
 
 
